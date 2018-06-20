@@ -1,0 +1,140 @@
+.jumbotron {
+    margin-bottom: 4em;
+
+}
+.person-wrapper {
+    margin-bottom: 2em;
+}
+
+.profile-pic {
+    width: 50%;
+}
+
+.btn-primary {
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(15, 116, 58, 0.62);
+}
+
+
+.image-about-us {
+    width: 80%;
+    height: 80%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-us{
+    postition: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(15, 80, 40);
+    color: white;
+    text-align:center;
+    padding: 20px;
+
+}
+
+.home{
+    background: url('./img/background-mountain.jpg ') no-repeat center center fixed;
+    display: table;
+    height: 860px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+.default{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+}
+
+.image-logo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.image-carousel{
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+.image-carousel-two{
+    background-size:cover;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}
+.carousel{
+    width: 100%;
+    height: 860px;
+    vertical-align: middle;
+    padding-bottom: 100px;
+}
+
+.carousel-visit-us{
+    width: 100%;
+    height: 500px;
+    vertical-align: middle;
+    padding-bottom: 100px;
+}
+
+.about-us{
+    padding: 80px;
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.about-us-font{
+    color: rgba(15, 116, 58, 0.71);
+    padding-top: 60px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.visit-us{
+    background: url('./img/visit-us.jpg ') no-repeat center center fixed;
+    display: table;
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    .home{
+        background: url('./img/background-mountain.jpg ') no-repeat center center fixed;
+        display: table;
+        height: 420px;
+        position: relative;
+        width: 100%;
+        background-size: cover;
+    }
+    .carousel{
+        width: 100%;
+        height: 400px;
+        vertical-align: middle;
+    }
+    .image-logo{
+        width: 550px;
+        height: 400px;
+    }
+    .about-us{
+        padding: 40px;
+        width: 100%;
+        background-color: #eeeeee;
+    }
+
+    .about-us-font{
+        color: rgba(15, 116, 58, 0.71);
+        padding-top: 0px;
+        text-align: center;
+        vertical-align: baseline;
+    }
+}
