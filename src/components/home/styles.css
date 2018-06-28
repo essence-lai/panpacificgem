@@ -11,10 +11,7 @@
 }
 
 .btn-primary {
-    background-image: none;
-    border: none;
-    border-radius: 0;
-    background-color: rgba(15, 116, 58, 0.62);
+    margin-bottom: 2em;
 }
 
 
@@ -22,8 +19,7 @@
     width: 80%;
     height: 80%;
     display:block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5em auto 5em auto;
 }
 
 .contact-us{
@@ -31,20 +27,38 @@
     left:0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(15, 80, 40);
+    background-color: #313131;
     color: white;
     text-align:center;
-    padding: 20px;
+    padding: 1%;
 
+}
+
+.carousel-item{
+    padding-bottom: 5em;
+}
+
+.carousel-font{
+    color: white;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 3em;
+}
+.carousel-font-padding{
+    color: white;
+    text-align: center;
+    font-family: Quicksand;
+    padding-bottom: 0.5em;
 }
 
 .home{
     background: url('./img/background-mountain.jpg ') no-repeat center center fixed;
     display: table;
-    height: 860px;
+    height: auto;
     position: relative;
     width: 100%;
     background-size: cover;
+    transition: opacity 0.3s linear;
 }
 .default{
     width: 100%;
@@ -54,87 +68,386 @@
 }
 
 .image-logo{
-    display:block;
+    padding-top: 25em;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
 }
 
 .image-carousel{
-    background-size:cover;
     width: 100%;
-    height: 100%;
+    height: 65em;
 }
+
+.image-carousel-image-one{
+    max-width: none;
+    max-height: 65em;
+
+}
+
+.image-carousel-image-one-two{
+    max-width: none;
+    min-height: 65em;
+    height: 100%;
+    object-position: 0px -50px;
+}
+
 .image-carousel-two{
     background-size:cover;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
-    height: auto;
+    height: 40em;
 }
 .carousel{
+     width: 100%;
+     height: 65em;
+     vertical-align: middle;
+     margin-bottom: 1%;
+ }
+
+.carousel-two{
     width: 100%;
-    height: 860px;
+    height: 40em;
     vertical-align: middle;
-    padding-bottom: 100px;
+    margin-bottom: 1%;
 }
 
 .carousel-visit-us{
     width: 100%;
-    height: 500px;
-    vertical-align: middle;
-    padding-bottom: 100px;
+    height: 40em;
 }
 
 .about-us{
-    padding: 80px;
+    padding: 5em;
     width: 100%;
     background-color: #eeeeee;
 }
 
 .about-us-font{
-    color: rgba(15, 116, 58, 0.71);
-    padding-top: 60px;
+    color: #6c6c6c;
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
     text-align: center;
-    vertical-align: baseline;
+    font-size: 1.75em;
 }
 
 .visit-us{
     background: url('./img/visit-us.jpg ') no-repeat center center fixed;
     display: table;
-    height: 100px;
+    height: auto;
     width: 100%;
     background-size: cover;
 }
 
-@media (max-width: 600px) {
+.contact-form{
+    padding: 10px;
+}
+
+.row-contact{
+    display: block;
+    padding: 1%;
+}
+
+.center{
+   padding-top: 11em;
+   padding-bottom: auto;
+}
+
+.visit-us-font{
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 3em;
+}
+
+.carousel-two-font-main{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: Quicksand;
+ }
+
+.carousel-two-font-sub{
+    color: white;
+    text-align: center;
+    font-size: 1.75em;
+    font-family: Quicksand;
+
+}
+
+.contact-us-font{
+     color: #4f4f4f;
+ }
+.message-sent-font{
+    color: #4f4f4f;
+    transition: opacity 0.3s linear;
+}
+
+.contact-form-font{
+    color: white;
+    text-align: center;
+    font-family: Quicksand;
+}
+
+.contact-form-font-bold{
+    color: white;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 2.25em;
+}
+@media (max-width: 800px) {
     .home{
-        background: url('./img/background-mountain.jpg ') no-repeat center center fixed;
+        background: url('./img/background-mountain-mobile.jpg ') no-repeat center center fixed ;
         display: table;
-        height: 420px;
+        height: auto;
         position: relative;
         width: 100%;
         background-size: cover;
+        transition: opacity 0.35s ease-in-out;
     }
+    .carousel-font{
+        color: white;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 1.25em;
+    }
+
+    .carousel-item{
+        padding-bottom: 1em;
+    }
+
     .carousel{
         width: 100%;
-        height: 400px;
+        height: 25em;
         vertical-align: middle;
+        margin-bottom: 1%;
+    }
+
+    .carousel-two{
+        width: 100%;
+        height: 18em;
+        vertical-align: middle;
+        margin-bottom: 1%;
+    }
+
+    .image-carousel{
+        width: 100%;
+        height: 25em;
+        vertical-align:  middle;
+    }
+
+    .image-carousel-two{
+        background-size:cover;
+        width: 100%;
+        height: 18em;
+    }
+
+    .image-logo{
+        padding-top: 4em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-carousel-image-one{
+        max-width: none;
+        min-height: 25em;
+        height: 100%;
+    }
+
+    .image-carousel-image-one-two{
+        max-width: none;
+        min-height: 25em;
+        height: 100%;
+        object-position: 0px 0px;
+    }
+
+    .carousel-font-padding{
+        color: white;
+        text-align: center;
+        font-family: Quicksand;
+        padding-bottom: 0.1em;
+    }
+
+    .about-us-font{
+        color: #6c6c6c;
+        margin-top: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+        text-align: center;
+        font-size: 1.40em;
+        font-family: Quicksand;
+    }
+
+    .image-about-us {
+        width: 100%;
+        min-height: 15em;
+        display:block;
+        margin: 5em 0em auto 0em;
+    }
+
+    .visit-us-font{
+        color: white;
+        text-align: center;
+        padding: 0.5em;
+        font-size: 1.55em;
+    }
+
+    .carousel-visit-us{
+        width: 100%;
+        height: 18em;
+    }
+
+    .carousel-two-font-main{
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: Quicksand;
+    }
+
+    .carousel-two-font-sub{
+        color: white;
+        text-align: center;
+        font-size: 1.3em;
+        font-family: Quicksand;
+
+    }
+
+
+    .center{
+        padding-top: 0em;
+        margin-bottom: 6em;
+    }
+
+    .contact-form-font{
+        color: white;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 1.25em;
+    }
+
+
+    .contact-form-font-bold{
+        color: white;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 1.40em;
+    }
+
+
+}
+
+@media  (min-width:  800px) and (max-width: 1150px) {
+    .carousel-font{
+        color: white;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 2em;
+    }
+
+    .carousel-item{
+        padding-bottom: 5em;
     }
     .image-logo{
-        width: 550px;
-        height: 400px;
+        padding-top: 20em;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+
+
+    .carousel{
+        width: 100%;
+        height: 55em;
+        vertical-align: middle;
+        margin-bottom: 1%;
+    }
+
+    .carousel-two{
+        width: 100%;
+        height: 38em;
+        vertical-align: middle;
+        margin-bottom: 1%;
+    }
+
+    .image-carousel{
+        width: 100%;
+        height: 55em;
+        vertical-align:  middle;
+    }
+
+    .image-carousel-image-one{
+        max-width: none;
+        min-height: 55em;
+        height: 100%;
+    }
+
+    .image-carousel-image-one-two{
+        max-width: none;
+        min-height: 55em;
+        height: 100%;
+        object-position: 0px 0px;
+    }
+
+    .image-carousel-two{
+        background-size:cover;
+        width: 90%;
+        height: 36em;
+    }
+
+    .carousel-font-padding{
+        color: white;
+        text-align: center;
+        font-family: Quicksand;
+        padding-bottom: 0.1em;
+    }
+
+    .about-us-font{
+        color: #6c6c6c;
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-align: center;
+        font-size: 1.50em;
+    }
+
+    .image-about-us {
+        width: 100%;
+        min-height: 20em;
+        display:block;
+        margin: 2em 0em auto 2em;
+    }
+
     .about-us{
-        padding: 40px;
+        padding: 10em;
         width: 100%;
         background-color: #eeeeee;
     }
 
-    .about-us-font{
-        color: rgba(15, 116, 58, 0.71);
-        padding-top: 0px;
+    .visit-us-font{
+        color: white;
         text-align: center;
-        vertical-align: baseline;
+        padding: 0.5em;
+        font-size: 2em;
     }
+
+    .carousel-visit-us{
+        width: 100%;
+        height: 38em;
+    }
+
+    .contact-form-font{
+        color: white;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 1.40em;
+    }
+
+    .contact-form-font-bold{
+        color: white;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 1.80em;
+    }
+
 }
