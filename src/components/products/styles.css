@@ -18,8 +18,10 @@
 }
 
 .product-handler{
-    height: 500em;
+    height: auto;
+    min-height: 70em;
     padding-top: 1em;
+    padding-bottom: 5em;
     width: 100%;
 }
 
@@ -35,4 +37,169 @@
 .coming-out-soon{
     margin-top: 2em;
     transition: 3s ease-in-out;
+}
+
+.title-grid{
+    position: relative;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    height: 8em;
+}
+
+.product-grid{
+    justify-content: center;
+    width: 100%;
+}
+
+.product-font{
+    position: absolute;
+    bottom: 0em;
+    right: 1em;
+    color: white;
+}
+
+.product-banner-image{
+    width: 100%;
+    padding: 0;
+    height: 8em;
+}
+
+.product-visit-us-font{
+    color: #313131;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 3em;
+}
+
+.product-carousel{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 1%;
+}
+
+.product-carousel-visit-us{
+    width: 100%;
+    height: 38em;
+}
+
+.product-image-carousel{
+    background-size:cover;
+    width: 100%;
+    height: 38em;
+}
+
+.product-carousel-two-font-main{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: Quicksand;
+}
+
+.product-carousel-two-font-sub{
+    color: white;
+    text-align: center;
+    font-size: 1.75em;
+    font-family: Quicksand;
+
+}
+
+.center-grid{
+    justify-content: center;
+    width: 100%;
+}
+
+@media  (min-width:  800px) and (max-width: 1150px) {
+    .product-carousel{
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        margin-bottom: 1%;
+    }
+
+    .product-carousel-visit-us{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .product-image-carousel{
+        background-size:cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .product-carousel-two-font-main{
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: Quicksand;
+    }
+
+    .product-carousel-two-font-sub{
+        color: white;
+        text-align: center;
+        font-size: 1.25em;
+        font-family: Quicksand;
+
+    }
+
+    .product-visit-us-font{
+        color: #313131;
+        text-align: center;
+        padding: 0.5em;
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .product-carousel{
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        margin-bottom: 1%;
+    }
+
+    .product-carousel-visit-us{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .product-image-carousel{
+        background-size:cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .product-carousel-two-font-main{
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: Quicksand;
+    }
+
+    .product-carousel-two-font-sub{
+        color: white;
+        text-align: center;
+        font-size: 1.25em;
+        font-family: Quicksand;
+
+    }
+
+    .product-visit-us-font{
+        color: #313131;
+        text-align: center;
+        padding: 0.5em;
+        font-size: 1.5em;
+    }
+
+
+
+
 }
