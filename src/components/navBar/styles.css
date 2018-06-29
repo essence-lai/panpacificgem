@@ -39,3 +39,12 @@ nav.navbar, .navbar-default {
     background-color : rgba(15, 116, 58, 0.1);
 }
 
+.navbar-default.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar-default.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+

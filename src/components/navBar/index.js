@@ -21,10 +21,26 @@ export default class navBar extends React.Component {
                         <NavItem eventKey={2} componentClass={Link}  href="/products" to="/products">
                            Products
                         </NavItem>
-                        <NavItem eventKey={3} componentClass={Link} href="/" to="/">
+                        <NavItem eventKey={3} componentClass={Link} href="/" to="/" onClick={()=> {
+                           if(window.screen.width > 1150){
+                               window.scrollTo(0,800)
+                            }else if( window.screen.width <= 800){
+                               window.scrollTo(0,300)
+                           } else{
+                            window.scrollTo(0,600)
+                        }
+                        }}>
                             About Us
                         </NavItem>
-                        <NavItem eventKey={4} componentClass={Link} href="/" to="/">
+                        <NavItem eventKey={4} componentClass={Link} href="/" to="/"
+                             onClick={()=> {
+                                 if(window.screen.width > 800){
+                                     window.scrollTo(0,2000)
+                                 }else{
+                                     window.scrollTo(0, 1200)
+                                 }
+                             }}
+                        >
                             Contact Us
                         </NavItem>
                     </Nav>
