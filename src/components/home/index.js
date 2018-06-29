@@ -5,7 +5,7 @@ import Navbar from '../navBar/index';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMobile, faEnvelope, faFax } from '@fortawesome/free-solid-svg-icons'
-import fire from '../../fire'
+import { database } from '../../fire'
 
 
 library.add(faPhone, faMobile, faEnvelope, faFax);
@@ -51,7 +51,7 @@ export default class  Home extends React.Component {
     onSubmit = (e) => {
     e.preventDefault();
     const { name, email, message } = this.state;
-    fire.database().ref('contacts').push({name, email, message});
+    database.ref('contacts').push({name, email, message});
     this.handleShow();
     setTimeout(this.handleDismiss, 3000);
     this.setState({

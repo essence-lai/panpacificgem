@@ -3,28 +3,33 @@ import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button ,Navbar, NavDropdown, Nav, MenuItem, Collapse} from 'react-bootstrap';
 import './styles.css'
 import  MainNavbar from '../navBar/index';
+import { connect } from 'react-redux';
+import { getProducts} from "../../actions/ProductsActions";
 
-export default class  Products extends React.Component {
-    constructor(){
-        super();
+class  Products extends React.Component {
+    constructor(props){
+        super(props);
         this.state = {
             comingOutSoon: { Ornaments: false, Miscellaneous: false},
-            products: []
+            productsShow: false,
         };
         this.handleSoon = this.handleSoon.bind(this);
         this.handleProduct = this.handleProduct.bind(this);
     }
 
     handleSoon = (e) =>{
-        this.setState({comingOutSoon: {Bracelets: false, Brooches: false, Carvings: false, Earrings: false, Necklaces: false, Ornaments: false, Pendants: false, Rings: false, Miscellaneous: false}, products: []});
+        this.setState({comingOutSoon: {Bracelets: false, Brooches: false, Carvings: false, Earrings: false, Necklaces: false, Ornaments: false, Pendants: false, Rings: false, Miscellaneous: false} , productsShow: false});
         this.setState({comingOutSoon: {[e]: true}})
 
     };
 
     handleProduct = (e) => {
-        //TODO: do something with products
+        this.setState({comingOutSoon: {Bracelets: false, Brooches: false, Carvings: false, Earrings: false, Necklaces: false, Ornaments: false, Pendants: false, Rings: false, Miscellaneous: false} , productsShow: false});
+        this.props.getProducts(e);
+        this.setState({productsShow: true});
     };
     render() {
+        const { products } = this.props;
         return (
             <Grid className="default">
                 <Grid className="product">
@@ -105,7 +110,9 @@ export default class  Products extends React.Component {
                                       id="basic-nav-dropdown"
                                   >
                                       <MenuItem eventKey={3.1}
-                                        //TODO: example text
+                                        onClick={ () => {
+                                            this.handleProduct('products/carvings/jade')
+                                        }}
                                       > Jade Carvings</MenuItem>
                                       <MenuItem eventKey={3.2}
                                                 onClick={() => {
@@ -324,6 +331,12 @@ export default class  Products extends React.Component {
                                   </p>
                               </Jumbotron>
                           }
+                          {
+                              ( products.length >= 2 && this.state.productsShow ) &&
+                                  <Jumbotron className="coming-out-soon">
+                                      <h1>WOOHO</h1>
+                                  </Jumbotron>
+                          }
                       </Grid>
                   </Grid>
                 </Grid>
@@ -332,3 +345,15 @@ export default class  Products extends React.Component {
     }
 
 }
+
+function mapStateToProps(state) {
+    return {
+        productsLoading: state.loading.products,
+        products: state.products
+    };
+}
+
+export default connect(
+    mapStateToProps,
+    { getProducts }
+)(Products)

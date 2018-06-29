@@ -1,4 +1,4 @@
-import firebase from 'firebase'
+import * as firebase from 'firebase'
 var config = {
     apiKey: "AIzaSyC0ixHY7FVjxhth4qWwO7AuoLI2QCQl5Xc",
     authDomain: "panpacificgem.firebaseapp.com",
@@ -8,5 +8,7 @@ var config = {
     messagingSenderId: "910518957235"
 };
 
-var fire = firebase.initializeApp(config);
-export default fire;
+firebase.initializeApp(config);
+
+export const database = firebase.database();
+export const storage = firebase.storage().ref();
