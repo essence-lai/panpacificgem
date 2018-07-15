@@ -281,7 +281,7 @@ class  Products extends React.Component {
                           </Navbar>
                       </Grid>
                       <Grid>
-                          {this.state.main &&
+                      {this.state.main &&
                           <Grid className="product-grid">
                               <Grid className="title-grid">
                                     <Image className="product-banner-image" src="../../assets/products.jpeg" />
